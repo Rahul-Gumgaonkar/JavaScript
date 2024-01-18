@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Check</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        color: white;
+      }
+
+      body {
+        background-color: #414141;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="insert">
+      <div class="key">Press the key and watch magic</div>
+    </div>
+  </body>
+
+  <script>
+    const insert = document.querySelector(".insert");
+    window.addEventListener("keydown", (e) => {
+      insert.innerHTML = `
+            <div class= 'color'>
+                <table>
+                    <tr>
+                        <th>Key</th>
+                        <th>Keycode</th>
+                        <th>Code</th>
+                    </tr>
+                    <tr>
+                        <td>${e.key === " " ? "Space" : e.key}</td>
+                        <td>${e.keyCode}</td>
+                        <td>${e.code}</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        `;
+    });
+  </script>
+</html>

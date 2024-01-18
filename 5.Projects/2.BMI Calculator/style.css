@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: #7e7c7c90;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    margin-inline: auto; 
+}
+
+.heading{
+    text-align: center;
+    padding: 20px ;
+
+    margin-top: 60px;
+    
+}
+
+input{
+    padding: 3px;
+}
+.cart{
+    width: 50%;
+    margin-inline: auto;
+    text-align: center;
+    box-shadow: 1px 1px 10px red;
+    padding-block: 50px;
+    border-radius: 20px;
+    margin-block: 40px;
+    background-color: #fff;
+}
+
+.btn{
+    padding: 8px 18px;
+    border-radius: 10px;
+    margin-block: 10px;
+}
+
+.result{
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: bold;
+    color: red;
+
+}
+
+.guide{
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: bold;
+    color: gray;
+}
